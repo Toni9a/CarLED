@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CABF8584C3D765964A40BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D99D6D736AB7E54007A9B1 /* Assets.xcassets */; };
+		16E18ACF278824AF8D6A0330 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A17A0FBD23096F7173026F /* RGB.swift */; };
+		2E126F5061D86AB26F6BFD49 /* LightEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859637E2F27D035EF8670BB2 /* LightEffect.swift */; };
+		4AD8437A8C8F0B93101AAA33 /* LightIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7722AA779379A292CCB314 /* LightIntents.swift */; };
+		9295AE315A9FC7E77840A6F3 /* EffectsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923B76C0DFF0A29F87FAD48 /* EffectsPanel.swift */; };
+		9C64DA5F25109CCA12899A95 /* LightColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5756AB4428F95FD4E2C70 /* LightColour.swift */; };
+		9EAC1AE461210E89298F6582 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969FFEF934350A016B9A8DD /* Theme.swift */; };
+		AAE39A1B4DFBD065016BAE8B /* CarGlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89325FB6962CCB64EF892611 /* CarGlowApp.swift */; };
+		C6A73861C2D7C278C1AC307A /* ELKProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F217EB3BFA1BC7B60A083A /* ELKProtocol.swift */; };
+		CA033170DB5096643FE05583 /* LEDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F781CAEE5729C2D3BBB32830 /* LEDController.swift */; };
+		CFA991089BDF722640C1ED29 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B262588CEC2F6B99BB75614 /* CarPlaySceneDelegate.swift */; };
+		F0EA95FB2F5FF4463600CAE0 /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD90C99D2B31261B085C530 /* RemoteView.swift */; };
+		FAF61FC193240A7A527D0A80 /* ColourWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D967F3029F5456C855137 /* ColourWheel.swift */; };
+		FD606B9B04040033D99DDAB9 /* DevicesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63C02F276E09539AEDFF84 /* DevicesSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0923B76C0DFF0A29F87FAD48 /* EffectsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsPanel.swift; sourceTree = "<group>"; };
+		4B262588CEC2F6B99BB75614 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		53D99D6D736AB7E54007A9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5969FFEF934350A016B9A8DD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6AD90C99D2B31261B085C530 /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
+		82F217EB3BFA1BC7B60A083A /* ELKProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELKProtocol.swift; sourceTree = "<group>"; };
+		82F5756AB4428F95FD4E2C70 /* LightColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightColour.swift; sourceTree = "<group>"; };
+		859637E2F27D035EF8670BB2 /* LightEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightEffect.swift; sourceTree = "<group>"; };
+		89325FB6962CCB64EF892611 /* CarGlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGlowApp.swift; sourceTree = "<group>"; };
+		9D63C02F276E09539AEDFF84 /* DevicesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSheet.swift; sourceTree = "<group>"; };
+		9DBC794F9164D33D19A20437 /* CarGlow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CarGlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A17A0FBD23096F7173026F /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		E94D967F3029F5456C855137 /* ColourWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourWheel.swift; sourceTree = "<group>"; };
+		EE07714173BEBE6C6C3FECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F243640692C087E19D47E044 /* CarGlow-CarPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CarGlow-CarPlay.entitlements"; sourceTree = "<group>"; };
+		F781CAEE5729C2D3BBB32830 /* LEDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDController.swift; sourceTree = "<group>"; };
+		FB7722AA779379A292CCB314 /* LightIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightIntents.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1829C933663FDAE31BD93913 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				FB7722AA779379A292CCB314 /* LightIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		2545A211530F4B759D183863 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				89325FB6962CCB64EF892611 /* CarGlowApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2969B2C1E4A8A5457AA4A882 /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				4B262588CEC2F6B99BB75614 /* CarPlaySceneDelegate.swift */,
+			);
+			path = CarPlay;
+			sourceTree = "<group>";
+		};
+		58EAE04C53291BAE1F4EB1D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DBC794F9164D33D19A20437 /* CarGlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E4975B0002A6D38E9FF2997 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E94D967F3029F5456C855137 /* ColourWheel.swift */,
+				9D63C02F276E09539AEDFF84 /* DevicesSheet.swift */,
+				0923B76C0DFF0A29F87FAD48 /* EffectsPanel.swift */,
+				6AD90C99D2B31261B085C530 /* RemoteView.swift */,
+				5969FFEF934350A016B9A8DD /* Theme.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9291AF4DEB7A74895BFF3175 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				82F217EB3BFA1BC7B60A083A /* ELKProtocol.swift */,
+				F781CAEE5729C2D3BBB32830 /* LEDController.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		9CA7C223E4B19E839A7CF7D4 /* CarGlow */ = {
+			isa = PBXGroup;
+			children = (
+				53D99D6D736AB7E54007A9B1 /* Assets.xcassets */,
+				F243640692C087E19D47E044 /* CarGlow-CarPlay.entitlements */,
+				EE07714173BEBE6C6C3FECC9 /* Info.plist */,
+				2545A211530F4B759D183863 /* App */,
+				9291AF4DEB7A74895BFF3175 /* Bluetooth */,
+				2969B2C1E4A8A5457AA4A882 /* CarPlay */,
+				1829C933663FDAE31BD93913 /* Intents */,
+				DDA60AE28FC6E74B1135CFF3 /* Model */,
+				7E4975B0002A6D38E9FF2997 /* Views */,
+			);
+			path = CarGlow;
+			sourceTree = "<group>";
+		};
+		DDA60AE28FC6E74B1135CFF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82F5756AB4428F95FD4E2C70 /* LightColour.swift */,
+				859637E2F27D035EF8670BB2 /* LightEffect.swift */,
+				E2A17A0FBD23096F7173026F /* RGB.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFEC1A05A3411F454CC9C1D7 = {
+			isa = PBXGroup;
+			children = (
+				9CA7C223E4B19E839A7CF7D4 /* CarGlow */,
+				58EAE04C53291BAE1F4EB1D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		768AD6BEF55892905026523E /* CarGlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD61F9E342A471937501F22 /* Build configuration list for PBXNativeTarget "CarGlow" */;
+			buildPhases = (
+				ABCDF45F8D6456EF48767CDB /* Sources */,
+				46F5696A1CBEA611D190861C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarGlow;
+			packageProductDependencies = (
+			);
+			productName = CarGlow;
+			productReference = 9DBC794F9164D33D19A20437 /* CarGlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D56169DE025EA5894DBF3BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					768AD6BEF55892905026523E = {
+						DevelopmentTeam = Y5W7BT59Q3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0140B395FEB7720804D27846 /* Build configuration list for PBXProject "CarGlow" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EFEC1A05A3411F454CC9C1D7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 58EAE04C53291BAE1F4EB1D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				768AD6BEF55892905026523E /* CarGlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46F5696A1CBEA611D190861C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CABF8584C3D765964A40BBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABCDF45F8D6456EF48767CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE39A1B4DFBD065016BAE8B /* CarGlowApp.swift in Sources */,
+				CFA991089BDF722640C1ED29 /* CarPlaySceneDelegate.swift in Sources */,
+				FAF61FC193240A7A527D0A80 /* ColourWheel.swift in Sources */,
+				FD606B9B04040033D99DDAB9 /* DevicesSheet.swift in Sources */,
+				C6A73861C2D7C278C1AC307A /* ELKProtocol.swift in Sources */,
+				9295AE315A9FC7E77840A6F3 /* EffectsPanel.swift in Sources */,
+				CA033170DB5096643FE05583 /* LEDController.swift in Sources */,
+				9C64DA5F25109CCA12899A95 /* LightColour.swift in Sources */,
+				2E126F5061D86AB26F6BFD49 /* LightEffect.swift in Sources */,
+				4AD8437A8C8F0B93101AAA33 /* LightIntents.swift in Sources */,
+				16E18ACF278824AF8D6A0330 /* RGB.swift in Sources */,
+				F0EA95FB2F5FF4463600CAE0 /* RemoteView.swift in Sources */,
+				9EAC1AE461210E89298F6582 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3557AD474DEF6230F2C482B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = "CarGlow/CarGlow-CarPlay.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarGlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toniesan.carglow;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A0135341D2052C6DD1106BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y5W7BT59Q3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BB785E516181225978D14BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y5W7BT59Q3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CF25CC4E569187B12A8FCBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = "CarGlow/CarGlow-CarPlay.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarGlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toniesan.carglow;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0140B395FEB7720804D27846 /* Build configuration list for PBXProject "CarGlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB785E516181225978D14BEC /* Debug */,
+				8A0135341D2052C6DD1106BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DCD61F9E342A471937501F22 /* Build configuration list for PBXNativeTarget "CarGlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3557AD474DEF6230F2C482B1 /* Debug */,
+				CF25CC4E569187B12A8FCBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D56169DE025EA5894DBF3BE /* Project object */;
+}
