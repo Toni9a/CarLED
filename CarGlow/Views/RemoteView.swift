@@ -14,6 +14,7 @@ struct RemoteView: View {
                     DeviceCard { showDevices = true }
                     VStack(spacing: 16) {
                         PowerCard()
+                        MusicCard()
                         Picker("Mode", selection: $mode) {
                             ForEach(Mode.allCases, id: \.self) { Text($0.rawValue) }
                         }
@@ -90,6 +91,50 @@ private struct DeviceCard: View {
         case .connected: .green
         case .bluetoothOff, .unauthorized: .red
         default: .secondary
+        }
+    }
+}
+
+private struct MusicCard: View {
+    @State private var music = MusicMode.shared
+    @State private var error: String?
+
+    var body: some View {
+        Card {
+            VStack(alignment: .leading, spacing: 10) {
+                Toggle(isOn: Binding(get: { music.isRunning }, set: toggle)) {
+                    VStack(alignment: .leading, spacing: 3) {
+                        Label("Music mode", systemImage: "music.note").font(.headline)
+                        Text("Lights fade and pulse with the music. Siri: \u{201C}turn on Car Light music\u{201D}.")
+                            .font(.caption).foregroundStyle(.secondary)
+                    }
+                }
+                .tint(Theme.accent)
+                if music.isRunning {
+                    GeometryReader { geo in
+                        Capsule().fill(Color.white.opacity(0.08))
+                            .overlay(alignment: .leading) {
+                                Capsule().fill(Theme.accent).frame(width: max(6, geo.size.width * music.level))
+                            }
+                    }
+                    .frame(height: 6)
+                    .animation(.linear(duration: 0.08), value: music.level)
+                }
+                if let error {
+                    Text(error).font(.caption).foregroundStyle(.red)
+                }
+            }
+        }
+    }
+
+    private func toggle(_ on: Bool) {
+        error = nil
+        if on {
+            Task {
+                do { try await music.start(fromApp: true) } catch { self.error = error.localizedDescription }
+            }
+        } else {
+            music.stop()
         }
     }
 }

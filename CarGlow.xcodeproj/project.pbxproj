@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0197FE67493902EC2F1B7D96 /* CarLightWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 652DBB3E3B148ABC15AC591E /* CarLightWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0CABF8584C3D765964A40BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D99D6D736AB7E54007A9B1 /* Assets.xcassets */; };
 		16E18ACF278824AF8D6A0330 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A17A0FBD23096F7173026F /* RGB.swift */; };
 		2E126F5061D86AB26F6BFD49 /* LightEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859637E2F27D035EF8670BB2 /* LightEffect.swift */; };
 		4AD8437A8C8F0B93101AAA33 /* LightIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7722AA779379A292CCB314 /* LightIntents.swift */; };
+		7D8BE1541A6A7D62E70D5D17 /* Daylight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6787CF4B075342F69F75EF59 /* Daylight.swift */; };
+		91388044CDE4B224F73C8936 /* MusicModeLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03B3FB848C7B5227379DB5B /* MusicModeLiveActivity.swift */; };
 		9295AE315A9FC7E77840A6F3 /* EffectsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923B76C0DFF0A29F87FAD48 /* EffectsPanel.swift */; };
 		9C64DA5F25109CCA12899A95 /* LightColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5756AB4428F95FD4E2C70 /* LightColour.swift */; };
 		9EAC1AE461210E89298F6582 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5969FFEF934350A016B9A8DD /* Theme.swift */; };
@@ -18,16 +21,46 @@
 		C6A73861C2D7C278C1AC307A /* ELKProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F217EB3BFA1BC7B60A083A /* ELKProtocol.swift */; };
 		CA033170DB5096643FE05583 /* LEDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F781CAEE5729C2D3BBB32830 /* LEDController.swift */; };
 		CFA991089BDF722640C1ED29 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B262588CEC2F6B99BB75614 /* CarPlaySceneDelegate.swift */; };
+		D2ACD40301D4C1E8E83CCD66 /* MusicModeAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373CA34D2D0D76F1EDE88951 /* MusicModeAttributes.swift */; };
+		EC9A972704B7B6C5E94EE668 /* MusicMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D3F3C9AC32F8CF4E18E1D /* MusicMode.swift */; };
 		F0EA95FB2F5FF4463600CAE0 /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD90C99D2B31261B085C530 /* RemoteView.swift */; };
+		F4967801CCAFD942D644FBBB /* MusicModeAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373CA34D2D0D76F1EDE88951 /* MusicModeAttributes.swift */; };
 		FAF61FC193240A7A527D0A80 /* ColourWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D967F3029F5456C855137 /* ColourWheel.swift */; };
 		FD606B9B04040033D99DDAB9 /* DevicesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63C02F276E09539AEDFF84 /* DevicesSheet.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		10711E663ED75A7EE7335C16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D56169DE025EA5894DBF3BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E46C6EC2BF261F20E276D1;
+			remoteInfo = CarLightWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2848E6E482702A8207B619EF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0197FE67493902EC2F1B7D96 /* CarLightWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0923B76C0DFF0A29F87FAD48 /* EffectsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsPanel.swift; sourceTree = "<group>"; };
+		373CA34D2D0D76F1EDE88951 /* MusicModeAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModeAttributes.swift; sourceTree = "<group>"; };
 		4B262588CEC2F6B99BB75614 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		53D99D6D736AB7E54007A9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5969FFEF934350A016B9A8DD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		652DBB3E3B148ABC15AC591E /* CarLightWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = CarLightWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6787CF4B075342F69F75EF59 /* Daylight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daylight.swift; sourceTree = "<group>"; };
 		6AD90C99D2B31261B085C530 /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
 		82F217EB3BFA1BC7B60A083A /* ELKProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELKProtocol.swift; sourceTree = "<group>"; };
 		82F5756AB4428F95FD4E2C70 /* LightColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightColour.swift; sourceTree = "<group>"; };
@@ -35,6 +68,9 @@
 		89325FB6962CCB64EF892611 /* CarGlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGlowApp.swift; sourceTree = "<group>"; };
 		9D63C02F276E09539AEDFF84 /* DevicesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSheet.swift; sourceTree = "<group>"; };
 		9DBC794F9164D33D19A20437 /* CarGlow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CarGlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C040E84DB32A2A872EE7EC8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D96D3F3C9AC32F8CF4E18E1D /* MusicMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMode.swift; sourceTree = "<group>"; };
+		E03B3FB848C7B5227379DB5B /* MusicModeLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModeLiveActivity.swift; sourceTree = "<group>"; };
 		E2A17A0FBD23096F7173026F /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
 		E94D967F3029F5456C855137 /* ColourWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourWheel.swift; sourceTree = "<group>"; };
 		EE07714173BEBE6C6C3FECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -44,12 +80,37 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		036B61A00CA7CF06E52670AD /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				D96D3F3C9AC32F8CF4E18E1D /* MusicMode.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		07A4EBEFE83E606BB26949AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				373CA34D2D0D76F1EDE88951 /* MusicModeAttributes.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		1829C933663FDAE31BD93913 /* Intents */ = {
 			isa = PBXGroup;
 			children = (
 				FB7722AA779379A292CCB314 /* LightIntents.swift */,
 			);
 			path = Intents;
+			sourceTree = "<group>";
+		};
+		1E06E28E6F6F2996731F561B /* CarLightWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				C040E84DB32A2A872EE7EC8E /* Info.plist */,
+				E03B3FB848C7B5227379DB5B /* MusicModeLiveActivity.swift */,
+			);
+			path = CarLightWidgets;
 			sourceTree = "<group>";
 		};
 		2545A211530F4B759D183863 /* App */ = {
@@ -72,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9DBC794F9164D33D19A20437 /* CarGlow.app */,
+				652DBB3E3B148ABC15AC591E /* CarLightWidgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +170,7 @@
 				2969B2C1E4A8A5457AA4A882 /* CarPlay */,
 				1829C933663FDAE31BD93913 /* Intents */,
 				DDA60AE28FC6E74B1135CFF3 /* Model */,
+				036B61A00CA7CF06E52670AD /* Music */,
 				7E4975B0002A6D38E9FF2997 /* Views */,
 			);
 			path = CarGlow;
@@ -116,6 +179,7 @@
 		DDA60AE28FC6E74B1135CFF3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6787CF4B075342F69F75EF59 /* Daylight.swift */,
 				82F5756AB4428F95FD4E2C70 /* LightColour.swift */,
 				859637E2F27D035EF8670BB2 /* LightEffect.swift */,
 				E2A17A0FBD23096F7173026F /* RGB.swift */,
@@ -127,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				9CA7C223E4B19E839A7CF7D4 /* CarGlow */,
+				1E06E28E6F6F2996731F561B /* CarLightWidgets */,
+				07A4EBEFE83E606BB26949AD /* Shared */,
 				58EAE04C53291BAE1F4EB1D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,16 +200,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		21E46C6EC2BF261F20E276D1 /* CarLightWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37DD93F5A5AC615EDBBE0830 /* Build configuration list for PBXNativeTarget "CarLightWidgets" */;
+			buildPhases = (
+				D27B9D528C02EE3140595B0D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarLightWidgets;
+			packageProductDependencies = (
+			);
+			productName = CarLightWidgets;
+			productReference = 652DBB3E3B148ABC15AC591E /* CarLightWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		768AD6BEF55892905026523E /* CarGlow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD61F9E342A471937501F22 /* Build configuration list for PBXNativeTarget "CarGlow" */;
 			buildPhases = (
 				ABCDF45F8D6456EF48767CDB /* Sources */,
 				46F5696A1CBEA611D190861C /* Resources */,
+				2848E6E482702A8207B619EF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1FB1EFFFB8097F90D3F9C99D /* PBXTargetDependency */,
 			);
 			name = CarGlow;
 			packageProductDependencies = (
@@ -161,6 +246,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					21E46C6EC2BF261F20E276D1 = {
+						DevelopmentTeam = Y5W7BT59Q3;
+						ProvisioningStyle = Automatic;
+					};
 					768AD6BEF55892905026523E = {
 						DevelopmentTeam = Y5W7BT59Q3;
 						ProvisioningStyle = Automatic;
@@ -182,6 +271,7 @@
 			projectRoot = "";
 			targets = (
 				768AD6BEF55892905026523E /* CarGlow */,
+				21E46C6EC2BF261F20E276D1 /* CarLightWidgets */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +295,7 @@
 				AAE39A1B4DFBD065016BAE8B /* CarGlowApp.swift in Sources */,
 				CFA991089BDF722640C1ED29 /* CarPlaySceneDelegate.swift in Sources */,
 				FAF61FC193240A7A527D0A80 /* ColourWheel.swift in Sources */,
+				7D8BE1541A6A7D62E70D5D17 /* Daylight.swift in Sources */,
 				FD606B9B04040033D99DDAB9 /* DevicesSheet.swift in Sources */,
 				C6A73861C2D7C278C1AC307A /* ELKProtocol.swift in Sources */,
 				9295AE315A9FC7E77840A6F3 /* EffectsPanel.swift in Sources */,
@@ -212,15 +303,50 @@
 				9C64DA5F25109CCA12899A95 /* LightColour.swift in Sources */,
 				2E126F5061D86AB26F6BFD49 /* LightEffect.swift in Sources */,
 				4AD8437A8C8F0B93101AAA33 /* LightIntents.swift in Sources */,
+				EC9A972704B7B6C5E94EE668 /* MusicMode.swift in Sources */,
+				F4967801CCAFD942D644FBBB /* MusicModeAttributes.swift in Sources */,
 				16E18ACF278824AF8D6A0330 /* RGB.swift in Sources */,
 				F0EA95FB2F5FF4463600CAE0 /* RemoteView.swift in Sources */,
 				9EAC1AE461210E89298F6582 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D27B9D528C02EE3140595B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ACD40301D4C1E8E83CCD66 /* MusicModeAttributes.swift in Sources */,
+				91388044CDE4B224F73C8936 /* MusicModeLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1FB1EFFFB8097F90D3F9C99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21E46C6EC2BF261F20E276D1 /* CarLightWidgets */;
+			targetProxy = 10711E663ED75A7EE7335C16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0FD1BCF840DE0BA200AC85E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarLightWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toniesan.carglow.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		3557AD474DEF6230F2C482B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -352,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -384,6 +510,22 @@
 			};
 			name = Release;
 		};
+		FE211061B227454263005EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarLightWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toniesan.carglow.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -392,6 +534,15 @@
 			buildConfigurations = (
 				BB785E516181225978D14BEC /* Debug */,
 				8A0135341D2052C6DD1106BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		37DD93F5A5AC615EDBBE0830 /* Build configuration list for PBXNativeTarget "CarLightWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE211061B227454263005EB4 /* Debug */,
+				0FD1BCF840DE0BA200AC85E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

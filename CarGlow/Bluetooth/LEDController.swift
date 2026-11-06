@@ -94,6 +94,7 @@ final class LEDController: NSObject {
     // MARK: Commands
 
     func setPower(_ on: Bool) {
+        if !on { MusicMode.shared.stop(restore: false) }
         isOn = on
         write(on ? ELKProtocol.powerOn : ELKProtocol.powerOff, key: "power", throttle: false)
     }
@@ -106,6 +107,7 @@ final class LEDController: NSObject {
     }
 
     func setColour(_ rgb: RGB, throttle: Bool = true) {
+        MusicMode.shared.stop(restore: false)
         colour = rgb
         effect = nil
         if !isOn { setPower(true) }
@@ -113,6 +115,7 @@ final class LEDController: NSObject {
     }
 
     func setEffect(_ e: LightEffect) {
+        MusicMode.shared.stop(restore: false)
         effect = e
         if !isOn { setPower(true) }
         write(ELKProtocol.effect(e), key: "effect", throttle: false)
@@ -124,16 +127,48 @@ final class LEDController: NSObject {
         write(ELKProtocol.speed(Int(speed)), key: "speed")
     }
 
+    // MARK: Light shows (these don't change the saved colour/effect)
+
+    /// Sends a colour without saving it, for music mode and the welcome flash.
+    func showColour(_ rgb: RGB, throttle: Bool = true) {
+        write(ELKProtocol.colour(rgb), key: "colour", throttle: throttle)
+    }
+
+    /// A quick rainbow sweep, about 1.5 seconds.
+    func playWelcomeFlash() async {
+        log("Welcome flash")
+        suppressSendLog = true
+        defer { suppressSendLog = false }
+        write(ELKProtocol.powerOn, key: "power", throttle: false)
+        write(ELKProtocol.brightness(100), key: "brightness", throttle: false)
+        let steps = 16
+        for i in 0...steps {
+            showColour(RGB(hue: Double(i % steps) / Double(steps), saturation: 1), throttle: false)
+            try? await Task.sleep(for: .milliseconds(90))
+        }
+    }
+
+    /// Puts the strip back to the saved colour or effect and brightness.
+    func restoreSavedLook() {
+        setPower(true)
+        if let effect {
+            setEffect(effect)
+        } else {
+            showColour(colour, throttle: false)
+        }
+        write(ELKProtocol.brightness(Int(brightness)), key: "brightness", throttle: false)
+    }
+
     /// Used by Siri / Shortcuts / CarPlay: connects if needed (waiting up to `timeout`), then runs `action`.
-    func perform(timeout: TimeInterval = 6, _ action: (LEDController) -> Void) async throws {
+    func perform(timeout: TimeInterval = 6, _ action: (LEDController) async -> Void) async throws {
         try await ensureConnected(timeout: timeout)
-        action(self)
+        await action(self)
         // Give CoreBluetooth a moment to flush the write before the intent process may be suspended.
         try? await Task.sleep(for: .milliseconds(300))
     }
 
     /// Siri/Shortcuts entry point. Never throws, so Siri always speaks a real reply.
-    func runForSiri(success: String, _ action: (LEDController) -> Void) async -> String {
+    func runForSiri(success: String, _ action: (LEDController) async -> Void) async -> String {
         log("Siri: \(success)")
         do {
             try await perform(action)
@@ -145,6 +180,9 @@ final class LEDController: NSObject {
     }
 
     // MARK: Activity log
+
+    /// Stops every command being logged during light shows (music mode sends ~15 a second).
+    var suppressSendLog = false
 
     private(set) var activity: [String] = UserDefaults.standard.stringArray(forKey: "activity") ?? []
 
@@ -258,7 +296,7 @@ final class LEDController: NSObject {
             reconnectIfNeeded()
             return
         }
-        if !isThrottledLogging { log("Sent " + data.map { String(format: "%02X", $0) }.joined(separator: " ")) }
+        if !isThrottledLogging && !suppressSendLog { log("Sent " + data.map { String(format: "%02X", $0) }.joined(separator: " ")) }
         let type: CBCharacteristicWriteType = c.properties.contains(.writeWithoutResponse) ? .withoutResponse : .withResponse
         p.writeValue(data, for: c, type: type)
     }

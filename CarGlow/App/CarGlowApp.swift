@@ -9,6 +9,7 @@ struct CarGlowApp: App {
             RemoteView()
                 .environment(controller)
                 .preferredColorScheme(.dark)
+                .task { LocationRefresher.shared.refresh() }
         }
     }
 }

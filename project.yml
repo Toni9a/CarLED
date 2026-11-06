@@ -2,7 +2,7 @@ name: CarGlow
 options:
   bundleIdPrefix: com.toniesan
   deploymentTarget:
-    iOS: "17.0"
+    iOS: "18.0"
 settings:
   base:
     DEVELOPMENT_TEAM: Y5W7BT59Q3
@@ -13,7 +13,9 @@ targets:
   CarGlow:
     type: application
     platform: iOS
-    sources: [CarGlow]
+    sources: [CarGlow, Shared]
+    dependencies:
+      - target: CarLightWidgets
     info:
       path: CarGlow/Info.plist
       properties:
@@ -28,8 +30,11 @@ targets:
           UIColorName: ""
         UIUserInterfaceStyle: Dark
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSLocationWhenInUseUsageDescription: Car Light uses your rough location to work out sunset, so lights only come on automatically when it's dark.
         NSBluetoothAlwaysUsageDescription: Car Light uses Bluetooth to control the LED strips in your car.
-        UIBackgroundModes: [bluetooth-central]
+        UIBackgroundModes: [bluetooth-central, audio]
+        NSSupportsLiveActivities: true
+        NSMicrophoneUsageDescription: Car Light listens to the music in your car so the lights can move with it. Nothing is recorded or saved.
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: true
           UISceneConfigurations:
@@ -44,3 +49,20 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         "CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]": CarGlow/CarGlow-CarPlay.entitlements
+  CarLightWidgets:
+    type: app-extension
+    platform: iOS
+    sources: [CarLightWidgets, Shared]
+    info:
+      path: CarLightWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: Car Light
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.toniesan.carglow.widgets
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1"
